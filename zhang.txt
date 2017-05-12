@@ -24,7 +24,7 @@ Git is free software.
 			git checkout -- xxx.txt //丢弃文件在工作区的修改全部撤销,总之，就是让这个文件回到最近一次git commit或git add时的状态。
 			git reset HEAD xxx.txt  //git reset命令既可以回退版本，也可以把暂存区的修改回退到工作区。当我们用HEAD时，表示最新的版本。
 		删除文件：
-			m test.txt //删除文件  注意：确实要从版本库中删除该文件，那就用命令git rm删掉，并且git commit
-		
+			rm test.txt //删除文件  注意：确实要从版本库中删除该文件，那就用命令git rm删掉，并且git commit
+			git remote rm origin  //删除一个远程的库
 		 
 
