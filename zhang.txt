@@ -25,6 +25,11 @@ Git is free software.
 			git reset HEAD xxx.txt  //git reset命令既可以回退版本，也可以把暂存区的修改回退到工作区。当我们用HEAD时，表示最新的版本。
 		删除文件：
 			rm test.txt //删除文件  注意：确实要从版本库中删除该文件，那就用命令git rm删掉，并且git commit
+		远程仓库:
+			第1步：创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key：
+			ssh-keygen -t rsa -C "youremail@example.com" //新建key(密钥)
+			git remote add origin 地址
+			git push -u origin master   //提交远程仓库
 			git remote rm origin  //删除一个远程的库
 		 
 
